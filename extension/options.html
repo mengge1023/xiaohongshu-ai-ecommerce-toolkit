@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>小红书爆款采集插件 · 生财专属版</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel">
+        <header class="header">
+          <div class="brand">
+            <span class="edition-mark" aria-hidden="true">生财</span>
+            <div class="brand-copy">
+              <h1>小红书爆款采集插件</h1>
+              <p>孟哥出品 · 生财专属版 · 小红书笔记保存到飞书</p>
+            </div>
+          </div>
+          <div id="connectionBadge" class="connection-badge" data-state="idle">未连接</div>
+        </header>
+
+        <div id="status" class="status" aria-live="polite">
+          <span class="status-dot"></span>
+          <span id="statusText">按 2 步完成设置，就可以开始采集。</span>
+        </div>
+
+        <form id="settingsForm" class="setup">
+          <section class="step-card config-card" id="feishuStep">
+            <div class="step-index" id="feishuIndex">1</div>
+            <div class="step-body">
+              <div class="step-head">
+                <div>
+                  <h2>默认多维表格</h2>
+                  <p>粘贴模板副本的分享链接和自定义授权码。知识库链接会打开飞书进行识别。</p>
+                </div>
+                <span id="feishuState" class="step-state">未连接</span>
+              </div>
+
+              <label id="tableChoiceField" class="field" hidden>
+                <span class="label-row">选择保存笔记的数据表</span>
+                <select id="tableChoice"><option value="">请选择数据表</option></select>
+              </label>
+              <div class="field-grid">
+                <label class="field">
+                  <span class="label-row">
+                    多维表格链接
+                    <span class="hint" tabindex="0" aria-label="多维表格链接说明">?
+                      <span class="hint-bubble">打开你复制出来的采集模板副本，复制浏览器地址栏链接。支持普通链接和知识库链接，插件会自动识别。</span>
+                    </span>
+                  </span>
+                  <input id="feishuUrl" name="feishuUrl" autocomplete="off" placeholder="直接粘贴飞书表格分享链接，支持 base / wiki">
+                </label>
+
+                <label class="field">
+                  <span class="label-row">
+                    自定义授权码
+                    <span class="hint" tabindex="0" aria-label="自定义授权码说明">?
+                      <span class="hint-bubble">在飞书多维表格右上角进入多维表格插件，选择自定义插件，获取并启用授权码后粘贴到这里。</span>
+                    </span>
+                  </span>
+                  <input id="tat" name="tat" autocomplete="off" placeholder="pt-xxxxxxxx" type="password">
+                </label>
+              </div>
+            </div>
+          </section>
+
+          <section class="step-card start-card" id="startStep">
+            <div class="step-index" id="startIndex">2</div>
+            <div class="step-body">
+              <div class="step-head">
+                <div>
+                  <h2>开始采集</h2>
+                  <p>打开单篇笔记，点击分享按钮，等待保存完成后再采集下一篇。</p>
+                </div>
+                <span id="readyState" class="step-state">待设置</span>
+              </div>
+
+              <div class="actions">
+                <button id="saveButton" type="submit">保存并连接</button>
+                <button id="testButton" type="button" class="secondary">写入测试记录</button>
+                <button id="openXhsButton" type="button" class="ghost">打开小红书</button>
+              </div>
+            </div>
+          </section>
+        </form>
+        <footer class="author-support">
+          <p><strong>孟哥出品</strong> · 生财专属版</p>
+          <p>如果感觉好用，欢迎到项目 GitHub 仓库，给我点个 Star。</p>
+          <a href="https://github.com/mengge1023/xiaohongshu-ai-ecommerce-toolkit" target="_blank" rel="noopener noreferrer">前往 GitHub 支持作者 ↗</a>
+        </footer>
+
+      </section>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

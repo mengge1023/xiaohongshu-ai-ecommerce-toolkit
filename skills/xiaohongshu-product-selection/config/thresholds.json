@@ -1,0 +1,8 @@
+{
+  "sales": {"preferred_max": 9999, "absolute_max": 11000, "score_bands": [[2999, 10], [6999, 9], [9999, 7], [11000, 3]]},
+  "cart_24h": {"ideal_min": 300, "absolute_min": 200, "score_bands": [[200, 7], [300, 12], [500, 15]]},
+  "benchmark": {"ideal_followers_max": 1000, "absolute_followers_max": 5000, "ideal_days": 7, "normal_days": 30, "absolute_days": 90, "min_likes": 100, "follower_score_bands": [[1000, 20], [2000, 17], [3000, 14], [4000, 11], [5000, 8]], "recency_score_bands": [[7, 20], [30, 16], [60, 10], [90, 5]]},
+  "profit": {"absolute_min_margin": 0.25, "score_bands": [[0.25, 12], [0.30, 16], [0.40, 18], [0.50, 20]]},
+  "material": {"A": 15, "B": 10, "C": 0},
+  "grades": [{"min": 85, "grade": "S", "verdict": "优先打"}, {"min": 70, "grade": "A", "verdict": "可以打"}, {"min": 55, "grade": "B", "verdict": "放宽打"}, {"min": 0, "grade": "C", "verdict": "换品"}]
+}

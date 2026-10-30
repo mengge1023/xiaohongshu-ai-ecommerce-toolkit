@@ -1,0 +1,6 @@
+interface:
+  display_name: "小红书爆品裁判（生财专属版）"
+  short_description: "孟哥出品，快速读取小红书公开数据，用3标2源判断这个品到底爆不爆"
+  default_prompt: "使用 $xiaohongshu-product-selection 抓取这些商品链接，马上告诉我哪个品爆不爆。"
+policy:
+  allow_implicit_invocation: true

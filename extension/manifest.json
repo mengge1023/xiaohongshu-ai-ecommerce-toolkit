@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "小红书爆款采集插件（生财专属版）",
+  "version": "0.3.5.1",
+  "description": "生财专属版：点击小红书单篇笔记的分享按钮，将笔记、图片和互动数据保存到自己的飞书表格。",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.xiaohongshu.com/*",
+    "https://*.xhscdn.com/*",
+    "https://*.feishu.cn/*",
+    "https://base-api.feishu.cn/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.xiaohongshu.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://*.feishu.cn/wiki/*"
+      ],
+      "js": [
+        "feishu-link.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "打开生财专属采集插件设置"
+  },
+  "options_page": "options.html",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwoFHJl/0avr6mDpveMlgDQN8UYV3uvzqUaHE8MltCJqUojUZgjC3BMcf+JK42hA1EIV8TBlLJxunfmMrko15qp2J8R7WL3gdN5PgXuGc+n7+T5W2uUpH4FChcbeQJxc+l17wlPgZ4qTATkmCrWVcmEfcJhziIPDQTaEXsjK2klIlCJPg6DYO/hLuTXw1/MYhCYoaKPiiPTLxdCIJ46k7bM1zrdByErvtTM8EP6NlQBXSVQQwV3vuL6viaCHxz20+e46tcMqC3aXLZ3DOf144OIMB3PgNi12I0tHi6MnJpc55uNhImnh4KcXZktbb0VRxQaIYo2U69pFEi/AeEY9zEwIDAQAB",
+  "minimum_chrome_version": "116",
+  "version_name": "0.3.5 生财专属版 1"
+}

@@ -1,0 +1,4 @@
+81a085db08cb9c5085b40dd3efd980502878cbf09bd6a287ad238f0a1c1077b2  xhs-ai-copywriting-scys-v1.2.1.zip
+940bbee25a5ae707400ca10e83e1f651d84d1b60ea6caae0e51b8b33bf579235  xhs-product-judge-scys-v1.3.1.zip
+55855f0fdfef173b9171d6c917c0ce2c01133cea32d63dedf3bbdb8354d4db10  xhs-collector-scys-v0.3.5.1.zip
+5d5e62e8174de002794c6d7ae27035561b8956e8c096418e7d5ad8ae75020f29  xhs-ai-ecommerce-toolkit-scys-v1.0.0.zip
